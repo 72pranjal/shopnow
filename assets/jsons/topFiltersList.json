@@ -1,0 +1,16 @@
+{
+    "sort": [
+        {
+            "code": "discount",
+            "label": "Discount"
+        },
+        {
+            "code": "price",
+            "label": "Price"
+        },
+        {
+            "code": "product_position",
+            "label": "Newest"
+        }
+    ]
+}
