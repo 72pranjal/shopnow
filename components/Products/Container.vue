@@ -40,5 +40,5 @@ function show(id: string) {
 function hide() {
     showViewDetailsAndSize.value = false;
 }
-console.log(productsData)
+// console.log(productsData)
 </script>
