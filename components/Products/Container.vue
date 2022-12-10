@@ -10,9 +10,9 @@
                         <p class="p-2 text-white">View Details</p>
                     </div>
                 </div>
-                <div class="absolute bottom-0 p-3 leading-8">
-                    <p>{{ product.Product_Title_FH === null ? product.name : product.Product_Title_FH }}</p>
-                    <p>{{ product.price }}</p>
+                <div class="absolute bottom-0  text-sm top-3/4 p-4 pt-10 leading-6">
+                    <p class="">{{ product.Product_Title_FH === null ? product.name : product.Product_Title_FH }}</p>
+                    <p> Rs. {{ product.price }}</p>
                     <p :class="[showViewDetailsAndSize ? '' : 'opacity-0 duration-1000 ']">Size - {{ product.size }}
                     </p>
                 </div>
