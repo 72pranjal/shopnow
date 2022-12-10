@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-orange-300 h-screen p-2">
+    <div class="bg-orange-300 p-2">
         <div class="border border-gray-300 p-2">
             <h1>Filters</h1>
             <div>
