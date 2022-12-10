@@ -25,7 +25,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { productsData } from '@/assets/jsons/products.json';
+import { productsData } from '~~/assets/jsons/products';
 
 const showViewDetailsAndSize = ref<boolean>(false);
 

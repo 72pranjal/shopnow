@@ -1,28 +1,4 @@
-{
-    "result": {
-        "id_category": "6",
-        "source_category_id": "6",
-        "parent_id": "2",
-        "name": "Kurtas",
-        "description": "<b>Accentuate Your Look With Women Kurta<\/b>\r\n<p>Kurtas are a must-have for every woman. They can be styled in many ways with bottom-wear gilets or drapes. Be it a casual-day-look kurta or the one for the light occasion, W has it all. Get your favourite kurtas and style them the way you want.<\/p>\r\n<p>When it comes to fusion fashion for Indian women, W is the first name that comes to mind. Choose from the wide range of <a href=\"https:\/\/wforwoman.com\/category\/top-wear-kurtas.html\" target=\"_blank\">women kurta<\/a>, from A-line to straight hems, solid to printed patterns. You will also find variety in embellishments, necklines, sleeve design and more. Style the kurta with <a href=\"https:\/\/wforwoman.com\/category\/bottom-wear.html\" target=\"_blank\">W bottom-wear<\/a>, add accessories and foot apparel to create a unique look.  <\/p>\r\n<p>To meet the fashion needs of modern Indian women, we keep updating our range with the latest trends. From an office day to a light festive look, you will find multiple options to add to your collection. Our kurtas are crafted in a variety of breathable, organic fabrics such as cotton, rayon, viscose, crepe, linen, and tencel. These fabrics are soft to touch and very comfortable to wear.  <\/p>\r\n<p>Go ahead, explore the collection, and add some interesting styles to your wardrobe.<\/p>",
-        "url_key": "top-wear-kurtas",
-        "meta_title": "Buy Women Kurta Online | FLAT 60% OFF – W for Woman",
-        "meta_description": "FLAT 60% OFF on 1700+ Styles. Choose from 1700+ women kurtas online from asymmetric to straight, gathered and paneled kurtas.",
-        "meta_keyword": "Online Shopping for Women,  W for Woman",
-        "image": null,
-        "mobile_image": null,
-        "status": "active",
-        "include_in_menu": "yes",
-        "position": "1",
-        "landing_page": null,
-        "store": "1",
-        "created_at": "2020-04-09 21:03:05",
-        "updated_at": "2022-12-08 11:16:12",
-        "promotion_message": "",
-        "count": 1742,
-        "parent_name": "Top Wear",
-        "parent_url_key": "top-wear",
-        "products": [
+export const  productsData = [
             {
                 "id_product": "62900",
                 "source_product_id": "62900",
@@ -14749,5 +14725,4 @@
                 }
             }
         ]
-    }
-}
+
