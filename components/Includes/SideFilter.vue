@@ -1,6 +1,6 @@
 <template>
     <div class="p-2">
-        <div class="border border-gray-300 p-2">
+        <div class="border border-gray-300 px-[18px] py-[15px]">
             <h1>Filters</h1>
             <div v-if="checkedFilters.length !== 0">
                 <h3 class="mb-2">Applied filters</h3>
@@ -14,7 +14,8 @@
                     @click="removeAllFilters()">Clear All</button>
             </div>
         </div>
-        <div v-for="filter, index in filters" :key="index" class="border-l border-r border-b border-gray-300 p-2">
+        <div v-for="filter, index in filters" :key="index"
+            class="border-l border-r border-b border-gray-300 px-[18px] py-[15px]">
             <div class="flex justify-between">
                 <h1>{{ filter.filter_lable }}</h1>
                 <ChevronUpIcon
