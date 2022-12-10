@@ -1,10 +1,8 @@
 <template>
-    <div class="flex flex-wrap mx-4 bg-white">
+    <div class="flex flex-wrap bg-white">
         <div v-for="product in productsData" :key="product.id_product">
-            <div 
-            class="w-72 mr-8 mt-10 border-2  h-[34rem]  relative border-slate-100 ml-8 overflow-hidden  cursor-pointer"
-            @mouseenter="show(product.id_product)" @mouseleave="hide()"
-              >
+            <div class="w-72 mr-8 mt-10 border-2  h-[34rem]  relative border-slate-100 ml-8 overflow-hidden  cursor-pointer"
+                @mouseenter="show(product.id_product)" @mouseleave="hide()">
                 <div class="relative">
                     <img class="absolute" :src="product.image" alt="hello">
                     <div
@@ -32,7 +30,7 @@ const showViewDetailsAndSize = ref<boolean>(false);
 // This function is used for show Size field and View details button
 // when user focus in
 function show(id: string) {
-   if(id) showViewDetailsAndSize.value = true
+    if (id) showViewDetailsAndSize.value = true
 }
 
 // This function is used for hide Size field and View details button
