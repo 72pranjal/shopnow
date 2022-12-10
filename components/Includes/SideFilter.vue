@@ -14,7 +14,7 @@
                     @click="removeAllFilters()">Clear All</button>
             </div>
         </div>
-        <div v-for="filter, index in filters" :key="index" class="border border-gray-300 p-2">
+        <div v-for="filter, index in filters" :key="index" class="border-l border-r border-b border-gray-300 p-2">
             <div class="flex justify-between">
                 <h1>{{ filter.filter_lable }}</h1>
                 <ChevronUpIcon
