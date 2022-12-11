@@ -36,6 +36,7 @@
 <script setup lang="ts">
 import { XMarkIcon, ChevronUpIcon } from '@heroicons/vue/24/outline';
 import { filters } from '@/assets/jsons/sideFiltersList';
+import { useProductStore } from '@/stores/productStore';
 
 // variable to handle all checked filters
 const checkedFilters = ref<string[]>([]);
@@ -44,15 +45,27 @@ const checkedFilters = ref<string[]>([]);
 const openCat = ref<string[]>([]);
 
 /**
+ * Watcher to handle change in checkedFilters array to remove or add value from store 
+ */
+watch(() => checkedFilters.value, (newValue, oldValue) => {
+    if (newValue.length > oldValue.length) {
+        useProductStore().setFilters(newValue.filter((el: string, index: number) => oldValue[index] !== el)[0]);
+    } else {
+        useProductStore().removeFilters(oldValue.filter((el: string) => !newValue.includes(el))[0]);
+    }
+})
+/**
  * Function to handle visiblity of sub filters 
  * @param productId : String 
  */
 const showSubFilters = (productId: string) => {
     if (!openCat.value.includes(productId)) {
         openCat.value.push(productId);
+
     } else {
         const index = openCat.value.indexOf(productId);
         openCat.value.splice(index, 1);
+
     }
 }
 
@@ -64,6 +77,7 @@ const removeFilters = (removedFilterId: string) => {
     if (checkedFilters.value.includes(removedFilterId)) {
         const index = checkedFilters.value.indexOf(removedFilterId);
         checkedFilters.value.splice(index, 1);
+        useProductStore().removeFilters(removedFilterId);
     }
 }
 
@@ -72,5 +86,6 @@ const removeFilters = (removedFilterId: string) => {
  */
 const removeAllFilters = () => {
     checkedFilters.value = [];
+    useProductStore().removeAllFilters();
 }
 </script>

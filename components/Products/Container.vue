@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-wrap bg-white">
+    <div class="flex flex-wrap bg-white mt-20">
         <div v-for="product in productsData" :key="product.id_product">
             <div class="w-72 mr-8 mt-10 border-2  h-[34rem]  relative border-slate-100 ml-8 overflow-hidden  cursor-pointer"
                 @mouseenter="show(product.id_product)" @mouseleave="hide()">
