@@ -1,15 +1,18 @@
 <template>
-    <div class=" w-[80%] p-2 mt-20">
-        <ProductsFiltered v-if="isShowFilteredComponent.length !== 0" class="absolute" />
-        <ProductsContainer v-else />
+    <div class=" w-[80%] p-2 ">
+        <ProductsFiltered v-if="isShowFilteredComponent.length" class="absolute"
+        :filteredData="filteredData"
+         />
+     <ProductsNormalProduct
+     v-else
+     :productsDataa="productsData"
+     />
     </div>
 </template>
-<<<<<<< HEAD
 <script setup lang="ts">
 import { useProductStore } from '@/stores/productStore';
 import { productsData } from '@/assets/jsons/products';
 import { filters } from '@/assets/jsons/sideFiltersList';
-import { type } from 'os';
 
 interface filterKeyValPair {
     [key: string]: string
@@ -42,7 +45,6 @@ watch(isShowFilteredComponent.value, (newVal, oldVal) => {
             let b: string | number = Object.values(arr[i])[0];
             let filteredKey = Object.keys(arr[i])[0];
             if (filteredKey === 'size' && typeof a === "string") {
-                console.log(filteredKey);
                 let num = (a as string).split(',').join('').split('[').join('').split(']');
                 num.pop();
                 if (!num.some(n => +n === +b)) {
@@ -77,15 +79,5 @@ watch(isShowFilteredComponent.value, (newVal, oldVal) => {
             filteredData.value.push(el);
         }
     });
-    console.log("filter data : ", filteredData.value);
 })
-=======
-
-<script setup>
-
-useHead({
-    title: "Womens-Shoping-Hub"
-})
-
->>>>>>>  finally component render
 </script>

@@ -32,7 +32,7 @@
 import { ArrowPathIcon} from '@heroicons/vue/24/outline';
 
 const props = defineProps({
-    productsData: {type:<any>Array},
+    productsDataa: {type:<any>Array},
 })
 
 const hoverIdArray = ref<string[]>([]);
@@ -41,8 +41,7 @@ const end =ref<number>(8)
 const isLoading = ref<boolean>(false)
 
 // Computed property is used to get some from base array
-const someProductN = computed<any[]>(()=> props.productsData.slice(start.value, end.value));
-console.log("called11111", someProductN.value)
+const someProductN = computed<any[]>(()=> props.productsDataa.slice(start.value, end.value));
 
 /**
  * This function is used to remove all squre brackets and commas from product size
@@ -91,9 +90,8 @@ function hide(id: string) {
          setTimeout(()=>{
             getDataOnScroll()
          },2000)
-          console.log(e)
           setTimeout(()=>{
-            if(end.value >= props.productsData.length ) end.value = 8
+            if(end.value >= props.productsDataa.length ) end.value = 8
             getDataOnScroll()
           })
 })
