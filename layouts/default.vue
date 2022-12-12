@@ -2,7 +2,8 @@
     <div>
         <IncludesHeader class="" />
         <div class="flex">
-            <IncludesSideFilter class="w-[22%] mt-20" />
+            <IncludesSideFilter class="w-[22%]" />
+            <IncludesScrollToTop />l
             <slot />
         </div>
         <IncludesFooter class="" />

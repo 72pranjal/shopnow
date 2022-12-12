@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed bg-slate-500 w-full h-[6vh] p-3 z-20">
-        Header
+    <div class="bg-slate-500 h-[6vh] p-3">
+        <p class="p-1 text-white text-2xl ml-2">Shop Now</p>
     </div>
 </template>

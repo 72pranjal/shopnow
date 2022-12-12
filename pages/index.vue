@@ -4,6 +4,7 @@
         <ProductsContainer v-else />
     </div>
 </template>
+<<<<<<< HEAD
 <script setup lang="ts">
 import { useProductStore } from '@/stores/productStore';
 import { productsData } from '@/assets/jsons/products';
@@ -78,4 +79,13 @@ watch(isShowFilteredComponent.value, (newVal, oldVal) => {
     });
     console.log("filter data : ", filteredData.value);
 })
+=======
+
+<script setup>
+
+useHead({
+    title: "Womens-Shoping-Hub"
+})
+
+>>>>>>>  finally component render
 </script>
